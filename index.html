@@ -1,0 +1,700 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>杨恒凯 - AI训练师 / 项目助理简历</title>
+  <style>
+    :root {
+      --ink: #1d2430;
+      --muted: #667085;
+      --line: #d8dee8;
+      --soft: #f5f7fb;
+      --paper: #ffffff;
+      --accent: #2454a6;
+      --accent-soft: #eaf1ff;
+      --section: #111827;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      background: #eef1f6;
+      color: var(--ink);
+      font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", Arial, sans-serif;
+      font-size: 15px;
+      line-height: 1.58;
+    }
+
+    body {
+      margin: 0;
+      padding: 32px 16px;
+    }
+
+    .page {
+      width: min(100%, 920px);
+      margin: 0 auto;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      box-shadow: 0 16px 48px rgba(17, 24, 39, 0.08);
+    }
+
+    .resume {
+      padding: 42px 48px 46px;
+    }
+
+    .top {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 24px;
+      align-items: start;
+      border-bottom: 2px solid var(--section);
+      padding-bottom: 22px;
+    }
+
+    h1 {
+      margin: 0;
+      color: var(--section);
+      font-size: 34px;
+      letter-spacing: 0;
+      line-height: 1.15;
+    }
+
+    .role {
+      margin-top: 8px;
+      color: var(--accent);
+      font-size: 17px;
+      font-weight: 700;
+    }
+
+    .contact {
+      min-width: 260px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.75;
+      text-align: right;
+    }
+
+    .contact strong {
+      color: var(--ink);
+      font-weight: 700;
+    }
+
+    section {
+      margin-top: 24px;
+    }
+
+    h2 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0 0 12px;
+      color: var(--section);
+      font-size: 18px;
+      line-height: 1.3;
+    }
+
+    h2::before {
+      content: "";
+      width: 5px;
+      height: 18px;
+      border-radius: 2px;
+      background: var(--accent);
+    }
+
+    .edu {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 12px 14px;
+      background: var(--soft);
+      border: 1px solid var(--line);
+    }
+
+    .edu strong {
+      color: var(--section);
+    }
+
+    .edu span {
+      color: var(--muted);
+      white-space: nowrap;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 19px;
+    }
+
+    li {
+      margin: 6px 0;
+      padding-left: 2px;
+    }
+
+    li::marker {
+      color: var(--accent);
+    }
+
+    .strengths {
+      display: grid;
+      gap: 10px;
+    }
+
+    .strength {
+      padding: 11px 13px;
+      border: 1px solid var(--line);
+      background: linear-gradient(90deg, var(--accent-soft), #fff 28%);
+    }
+
+    .strength strong {
+      color: var(--section);
+    }
+
+    .job {
+      margin-top: 18px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+    }
+
+    .job:first-of-type {
+      margin-top: 0;
+      padding-top: 0;
+      border-top: 0;
+    }
+
+    .job-head {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 14px;
+      align-items: start;
+      margin-bottom: 8px;
+    }
+
+    .job-title {
+      color: var(--section);
+      font-size: 16px;
+      font-weight: 800;
+    }
+
+    .job-meta {
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 700;
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin: 7px 0 9px;
+    }
+
+    .tag {
+      padding: 2px 8px;
+      color: #24436f;
+      background: var(--accent-soft);
+      border: 1px solid #cfe0ff;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .campus {
+      display: grid;
+      gap: 14px;
+    }
+
+    .campus-item {
+      padding: 13px 14px;
+      border: 1px solid var(--line);
+      background: var(--soft);
+    }
+
+    .campus-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 14px;
+      margin-bottom: 6px;
+      color: var(--section);
+      font-weight: 800;
+    }
+
+    .campus-head span {
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px 18px;
+    }
+
+    .skill-line {
+      padding: 9px 12px;
+      border-left: 3px solid var(--accent);
+      background: var(--soft);
+    }
+
+    .toolbar {
+      position: sticky;
+      top: 0;
+      z-index: 2;
+      width: min(100%, 920px);
+      margin: 0 auto 12px;
+      display: flex;
+      justify-content: flex-end;
+      gap: 8px;
+    }
+
+    .toolbar button {
+      appearance: none;
+      border: 1px solid #c8d2e2;
+      background: #fff;
+      color: #1f2937;
+      border-radius: 6px;
+      padding: 8px 12px;
+      font: inherit;
+      font-size: 13px;
+      cursor: pointer;
+      box-shadow: 0 8px 22px rgba(17, 24, 39, 0.08);
+    }
+
+    .toolbar button:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    @media (max-width: 760px) {
+      body {
+        padding: 0;
+      }
+
+      .toolbar {
+        display: none;
+      }
+
+      .page {
+        border: 0;
+        box-shadow: none;
+      }
+
+      .resume {
+        padding: 28px 20px;
+      }
+
+      .top,
+      .job-head {
+        grid-template-columns: 1fr;
+      }
+
+      .contact,
+      .job-meta {
+        text-align: left;
+      }
+
+      .edu,
+      .campus-head {
+        display: block;
+      }
+
+      .skills {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media print {
+      @page {
+        size: A4;
+        margin: 12mm;
+      }
+
+      html,
+      body {
+        background: #fff;
+        padding: 0;
+        font-size: 12px;
+        line-height: 1.45;
+      }
+
+      .toolbar {
+        display: none;
+      }
+
+      .page {
+        width: 100%;
+        border: 0;
+        box-shadow: none;
+      }
+
+      .resume {
+        padding: 0;
+      }
+
+      section {
+        margin-top: 14px;
+      }
+
+      h1 {
+        font-size: 28px;
+      }
+
+      h2 {
+        font-size: 15px;
+        margin-bottom: 8px;
+      }
+
+      li {
+        margin: 3px 0;
+      }
+
+      .strength,
+      .campus-item,
+      .edu,
+      .skill-line {
+        background: #fff;
+      }
+
+      .job {
+        margin-top: 12px;
+        padding-top: 12px;
+      }
+    }
+  </style>
+  <style>
+    :root {
+      --ink: #111827;
+      --muted: #5b6472;
+      --line: #d8dde6;
+      --soft: #f7f8fa;
+      --paper: #ffffff;
+      --accent: #1f5fbf;
+      --accent-soft: #edf3ff;
+      --section: #111827;
+    }
+
+    html {
+      background: #f3f4f6;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    body {
+      padding: 24px 16px;
+    }
+
+    .page {
+      width: min(100%, 900px);
+      border: 1px solid #e5e7eb;
+      box-shadow: 0 18px 46px rgba(17, 24, 39, 0.10);
+    }
+
+    .resume {
+      padding: 36px 42px 40px;
+    }
+
+    .top {
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 22px;
+      border-bottom: 2px solid var(--ink);
+      padding-bottom: 18px;
+    }
+
+    h1 {
+      font-size: 32px;
+      letter-spacing: 0.02em;
+    }
+
+    .role {
+      color: var(--accent);
+      font-size: 16px;
+    }
+
+    .contact {
+      min-width: 240px;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.65;
+    }
+
+    section {
+      margin-top: 20px;
+    }
+
+    h2 {
+      gap: 8px;
+      margin-bottom: 10px;
+      font-size: 17px;
+    }
+
+    h2::before {
+      width: 4px;
+      height: 16px;
+      background: var(--accent);
+    }
+
+    .toolbar button {
+      border-radius: 7px;
+      box-shadow: 0 10px 28px rgba(17, 24, 39, 0.08);
+    }
+
+    .edu,
+    .strength,
+    .campus-item,
+    .skill-line {
+      background: var(--soft);
+      border: 1px solid #e6e9ef;
+      border-radius: 6px;
+    }
+
+    .strength {
+      padding: 10px 12px;
+      background: var(--soft);
+    }
+
+    .strengths {
+      gap: 8px;
+    }
+
+    .job {
+      margin-top: 15px;
+      padding-top: 15px;
+      border-top: 1px solid var(--line);
+    }
+
+    .job-title {
+      color: var(--ink);
+      font-size: 15px;
+      line-height: 1.35;
+    }
+
+    .job-meta {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .tags {
+      gap: 5px;
+      margin: 6px 0 8px;
+    }
+
+    .tag {
+      color: #24436f;
+      background: var(--accent-soft);
+      border: 1px solid #c8d8f3;
+      border-radius: 999px;
+      font-size: 11px;
+    }
+
+    li {
+      margin: 4px 0;
+    }
+
+    .campus {
+      gap: 10px;
+    }
+
+    .campus-item {
+      padding: 11px 12px;
+    }
+
+    .campus-head {
+      margin-bottom: 5px;
+      color: var(--ink);
+      font-size: 14px;
+    }
+
+    .campus-head span {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .skills {
+      gap: 8px 14px;
+    }
+
+    .skill-line {
+      border-left: 3px solid var(--accent);
+      padding: 8px 10px;
+    }
+
+    @media print {
+      html,
+      body {
+        font-size: 12px;
+        line-height: 1.42;
+      }
+
+      .resume {
+        padding: 0;
+      }
+
+      section {
+        margin-top: 12px;
+      }
+
+      h1 {
+        font-size: 27px;
+      }
+
+      h2 {
+        font-size: 15px;
+      }
+
+      .job {
+        margin-top: 10px;
+        padding-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="toolbar">
+    <button type="button" onclick="window.print()">打印 / 导出 PDF</button>
+  </div>
+
+  <main class="page">
+    <article class="resume">
+      <header class="top">
+        <div>
+          <h1>杨恒凯</h1>
+          <div class="role">AI 训练师 / 项目助理</div>
+        </div>
+        <div class="contact">
+          <div><strong>所在地：</strong>四川成都</div>
+          <div><strong>工作年限：</strong>1 年</div>
+          <div><strong>邮箱：</strong>Thunder123666@163.com</div>
+          <div><strong>电话：</strong>18215087108</div>
+        </div>
+      </header>
+
+      <section>
+        <h2>教育经历</h2>
+        <div class="edu">
+          <strong>齐鲁工业大学 - 数据科学与大数据技术 - 本科</strong>
+          <span>2021-2025</span>
+        </div>
+      </section>
+
+      <section>
+        <h2>个人优势</h2>
+        <div class="strengths">
+          <div class="strength"><strong>具备 AI 数据项目全流程协助经验：</strong>熟悉从需求承接、样本预处理、评测集准备、规则培训、预评/试标、正式评测、质检复核、争议样本处理、Bad Case 归因到规则迭代的完整流程，能够协助推进项目从需求到交付闭环落地。</div>
+          <div class="strength"><strong>具备多模态评测任务理解与质量判断能力：</strong>参与文生视频、VQA 图文问答、短视频 Caption 等多模态项目，能够围绕 Prompt 理解、图片理解、OCR、主体一致性、画面质量、回答可用性、客观描述和安全合规等维度拆解评测标准。</div>
+          <div class="strength"><strong>具备 Bad Case 复盘与规则沉淀能力：</strong>能够将低分、争议和边界样本按主体漂移、文字崩坏、运镜未执行、物理异常、OCR 错误、幻觉补全、过度推断等问题分类，并协助沉淀答疑文档、质检标准、专项样本池和规则修订建议。</div>
+          <div class="strength"><strong>具备数据处理与交付材料整理能力：</strong>本科数据科学与大数据技术专业，熟悉 Python、MySQL、Excel 等工具，具备数据清洗、查询、统计、可视化分析和报告整理经验，可支持评测数据整理、质量检查、指标统计和交付材料汇总。</div>
+          <div class="strength"><strong>具备项目协同与流程推进能力：</strong>在社团管理、数据分析实习和多模态评测项目中积累了任务拆解、人员协调、进度跟进、问题记录和复盘总结经验，能够在多任务场景下保持细致、稳定，并协助团队完成批次交付。</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>工作经历</h2>
+
+        <div class="job">
+          <div class="job-head">
+            <div>
+              <div class="job-title">字节跳动｜电商商品文生视频模型评测与训练数据质量管理项目</div>
+              <div class="tags">
+                <span class="tag">AI 训练师</span>
+                <span class="tag">模型评测执行</span>
+                <span class="tag">项目协同</span>
+              </div>
+            </div>
+            <div class="job-meta">2025.08-2026.02</div>
+          </div>
+          <ul>
+            <li>围绕电商商品营销短视频场景，参与即梦文生视频模型多版本评测与训练数据补强，负责 Prompt 理解、主体一致性、动作连贯性、画面质量、物理合理性、合规风险等维度的评分执行与质量校准。</li>
+            <li>参与构建试标集、正式评测集、专项评测集和 Bad Case 回流集，按商品类目、Prompt 类型、镜头要求、商品细节、动态物理和合规风险进行样本分层。</li>
+            <li>协同核心训练师、质检和标注执行侧推进规则培训、首轮试标、分歧复盘、二次试标和准入校准，沉淀评分口径、典型样例和争议样本处理规则。</li>
+            <li>对低分和争议样本进行 Bad Case 归因，归纳主体漂移、Logo/文字崩坏、运镜未执行、物理异常、疑似品牌侵权等问题，并输出 Prompt 约束、专项评测集和训练数据回流建议。</li>
+            <li>基于表格公式/规则脚本对视频时长、字段缺失、重复样本、敏感品牌词、低分样本和备注缺失进行质检初筛；结合商品类目、卖点、镜头、风格和时长字段整理 Prompt 模板初稿。</li>
+            <li>项目周期约 6-7 个月，协同约 15 人团队完成约 9 万条有效评测/标注数据交付；客观字段质检通过率稳定在约 95%，交付评分表、Bad Case 清单、规则迭代记录和版本对比报告。</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-head">
+            <div>
+              <div class="job-title">某头部互联网公司｜豆包相关多模态 VQA 回答质量评测项目</div>
+              <div class="tags">
+                <span class="tag">项目助理</span>
+                <span class="tag">模型评测执行</span>
+                <span class="tag">质检协同</span>
+              </div>
+            </div>
+            <div class="job-meta">2026.02-2026.03</div>
+          </div>
+          <ul>
+            <li>面向豆包 App 含图问答、图片理解、OCR、图片翻译、作业答疑、图文总结等场景，参与多模态 VQA 模型回答质量评测，判断模型是否准确理解图片内容、用户意图并输出可用回答。</li>
+            <li>协助拆解产品侧和算法评测侧需求，将回答质量评估拆分为图片理解、OCR 识别、意图理解、任务完成度、事实准确性、格式可用性和安全合规等维度。</li>
+            <li>参与试评集、正式评测集、争议复核集和 Bad Case 样本池准备，覆盖票据、菜单、截图、商品图、作业图、网页、文档照片等图片类型。</li>
+            <li>配合规则培训、预评、正式评测、质检复核和标准拉齐流程，记录高频疑问、争议样本、低分原因和复核结论，协助沉淀答疑文档和规则修订建议。</li>
+            <li>对 0-1 分、争议样本和敏感场景样本补充备注并标记 Bad Case 类型，归因 OCR 识别错误、主体识别偏差、意图理解偏差、多约束遗漏、格式不可用、幻觉补全、过度拒答等问题。</li>
+            <li>项目周期约 6-8 周，协同 10-12 人团队累计完成约 8000 条多模态 VQA 样本评测；所在批次质检通过率稳定在 95% 左右，低分及争议样本基本完成问题归因。</li>
+            <li>参与整理 VQA 评测评分表、质检记录、答疑文档、争议 case 汇总、Bad Case 清单和问题归因表，为后续版本回归评测、规则调整和专项数据补强提供依据。</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-head">
+            <div>
+              <div class="job-title">某 AI 数据服务项目｜短视频内容理解 Caption 标注与质检项目</div>
+              <div class="tags">
+                <span class="tag">项目助理</span>
+                <span class="tag">Caption 执行</span>
+                <span class="tag">质检协同</span>
+              </div>
+            </div>
+            <div class="job-meta">2026.04-2026.06</div>
+          </div>
+          <ul>
+            <li>面向短视频理解、视频检索、视频问答和多模态模型训练场景，参与 5-30 秒短视频 Caption 标注与结构化标签质检，产出视频-文本配对训练数据。</li>
+            <li>协助拆解数据训练侧需求，将 Caption 质量要求拆分为主体识别、动作描述、场景信息、事件顺序、客观性、完整性、语言质量和风险标记等维度。</li>
+            <li>参与样本预处理、试标集、正式标注集、质检抽检集、争议复核集和 Bad Case 样本池准备，标记无法播放、重复、低质、时长异常和风险内容样本。</li>
+            <li>配合规则培训、预标、正式标注、抽检返修和标准拉齐流程，记录高频疑问、返修原因、争议样本和复核结论，协助沉淀答疑文档和规则修订建议。</li>
+            <li>按“检查视频质量 - 完整观看 - 确认主体/动作/场景 - 判断时间顺序 - 编写客观 Caption - 补充结构化标签 - 标记异常样本”的流程完成标注，减少漏写、错写和主观扩写。</li>
+            <li>总结主体漏写、动作遗漏、时间顺序错误、过度推断、低质样本未标记、风险内容漏标等 Bad Case，并转化为质检规则和返修标准。</li>
+            <li>项目周期约 8-10 周，协同 10-12 人团队累计完成约 3 万条短视频 Caption 与结构化标签数据；所在批次质检通过率稳定在 95% 左右。</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>校园经历 / 作品集</h2>
+        <div class="campus">
+          <div class="campus-item">
+            <div class="campus-head">齐鲁工业大学 960 远足社｜社长 <span>2022.10-2025.04</span></div>
+            <ul>
+              <li>负责社团日常管理与活动组织，策划并执行 20+ 场远足活动，累计参与 500+ 人次，参与路线规划、物资准备、人员协调、风险控制和活动复盘。</li>
+              <li>组织社团招新与校园活动推广，参与两次“百团大战”招新活动，提升社团曝光度、成员活跃度和活动参与度。</li>
+              <li>任职期间社团获评“校园十佳社团”，在团队协作、跨部门沟通、现场执行和突发问题处理方面积累实践经验。</li>
+            </ul>
+          </div>
+          <div class="campus-item">
+            <div class="campus-head">数据分析项目 / 作品集 <span>2023-2025</span></div>
+            <ul>
+              <li>基于 Python 完成数据采集、清洗、趋势分析和可视化展示，使用 MySQL、Excel、Flask、ECharts 等工具整理数据分析报告和交互式看板。</li>
+              <li>完成新能源汽车数据分析与可视化系统，围绕市场表现、指标计算和图表展示进行数据处理，为业务分析和报告呈现提供支撑。</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>专业技能</h2>
+        <div class="skills">
+          <div class="skill-line"><strong>数据处理：</strong>Python、MySQL、Excel、数据清洗、数据查询、指标统计</div>
+          <div class="skill-line"><strong>评测协同：</strong>试评/预标、质检复核、争议样本处理、Bad Case 归因</div>
+          <div class="skill-line"><strong>文档交付：</strong>评分表、质检记录、答疑文档、规则修订建议、复盘报告</div>
+          <div class="skill-line"><strong>语言能力：</strong>CET-4，具备英文技术文档与业务材料阅读基础</div>
+        </div>
+      </section>
+    </article>
+  </main>
+</body>
+</html>
